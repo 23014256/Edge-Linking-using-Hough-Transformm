@@ -21,19 +21,17 @@ Draw lines on the image.
 ### Step5:
 Display the result.
 
-## Program:
-```
-DEVELOPED BY: Suman G
-REGISTER NUMBER: 212223240163
-```
+## Program Developed By:
 
+- **Name:** Suman G 
+- **Register Number:**  212223240163
 ### Read image and convert it to grayscale image
 ```PY
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
-img=cv2.imread("VI.jpeg",0)
-img_c=cv2.imread("VI.jpeg",1)
+img=cv2.imread("jpeg.jpeg",0)
+img_c=cv2.imread("jpeg.jpeg",1)
 img_c=cv2.cvtColor(img_c,cv2.COLOR_BGR2RGB)
 gray=cv2.cvtColor(img,cv2.COLOR_GRAY2RGB)
 gray = cv2.GaussianBlur(gray,(3,3),0)
